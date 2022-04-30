@@ -21,7 +21,7 @@ return new class extends Migration
             $table->tinyInteger('priority')->default(0)->unsigned();
             $table->text("description");
             $table->timestamps();
-            //$table->softDeletes();
+            //$table->softDeletes();   // érdemes ezt eleve beleírni, de most másképp oldjuk meg...
         });
     }
 

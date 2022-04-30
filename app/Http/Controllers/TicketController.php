@@ -67,6 +67,7 @@ class TicketController extends Controller
     }
 
     public function home(Request $request){
+        /*
         echo '<pre>';
         //var_dump($request->session());
         //var_dump($request->session()->get('email'));
@@ -88,6 +89,7 @@ class TicketController extends Controller
             'messages' =>$messages,
             'tickets' =>$tickets
         ]);
+        */
     }
 
     public function create_old(Request $request){

@@ -11,6 +11,7 @@
             <th>Piroritás</th>
             <th>Leírás</th>
             <th></th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -31,9 +32,12 @@
                 <td>{{ $ticket->statusPrio() }}</td>
                 <td>{{ $ticket['description'] }}</td>
                 <td>
+                    <a href="{{ route('ticket.show', ["id"=>$ticket["id"]]) }}">Részletek</a>
+                    <br/>
+                </td>
+                <td>
                     <a href="{{ route('ticket.delete', ["id"=>$ticket["id"]]) }}">Törlés</a>
                     <br/>
-                    Szerkesztés
                 </td>
             </tr>
         @empty

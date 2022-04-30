@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('tickets') -> insert([
-            'user_id' => 0,
+            'user_id' => 1,
             'category_id' => 0,
             'status' => "received",
             'description' => Str::random(25)
